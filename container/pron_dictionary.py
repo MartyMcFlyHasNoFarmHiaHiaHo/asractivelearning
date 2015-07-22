@@ -1,9 +1,15 @@
 __author__ = 'martin'
 
-class PronounciationDictionary(object):
+class PronounciationDictionary(dict):
     def __init__(self, word_to_phoneme_map, tags):
-        self.word_to_phoneme_map = word_to_phoneme_map
+        super(PronounciationDictionary, self).__init__()
+        self.update(word_to_phoneme_map)
         self.tags = tags
+
+
+
+
+
 
 
 
