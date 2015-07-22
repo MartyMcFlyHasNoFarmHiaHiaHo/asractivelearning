@@ -1,0 +1,100 @@
+$                                   {{SIL WB}}
+$(<BREATH>)                         {{+BREATH+ WB}}
+$(<SBREATH>)                        {{SIL WB} {+BREATH+ WB} {SIL WB}}
+$(PAUSE)                            {{SIL WB} SIL SIL {SIL WB}}
+'A {{AX WB}}
+'All {{AO WB} {L WB}}
+'American {{AX WB} M EH R AX K AX {N WB}}
+'Are {{AA WB} {R WB}}
+'Be {{B WB} {IY WB}}
+'Big {{B WB} IH {G WB}}
+'But {{B WB} AH {T WB}}
+'Can {{K WB} AE {N WB}}
+'Cause {{K WB} AA {Z WB}}
+'Come {{K WB} AH {M WB}}
+'Did {{D WB} IH {D WB}}
+'Do {{D WB} {UW WB}}
+'Don't {{D WB} OW N {T WB}}
+'Em {{AX WB} {M WB}}
+'Fahrenheit {{F WB} EH R AX N HH AY {T WB}}
+'Gee {{JH WB} {IY WB}}
+'Get {{G WB} EH {T WB}}
+'Give {{G WB} IH {V WB}}
+'Go {{G WB} {OW WB}}
+'God {{G WB} AA {D WB}}
+'Good {{G WB} UH {D WB}}
+'Great {{G WB} R EY {T WB}}
+'Have {{HH WB} AE {V WB}}
+'He {{HH WB} {IY WB}}
+'He's {{HH WB} IH {Z WB}}
+'Here {{HH WB} IH {R WB}}
+'Here's {{HH WB} IH R {Z WB}}
+'Hey {{HH WB} {EY WB}}
+'I {{AY WB}}
+'I'll {{IH WB} {L WB}}
+'I'm {{IH WB} {M WB}}
+'I've {{AY WB} {V WB}}
+'If {{IH WB} {F WB}}
+'In {{IH WB} {N WB}}
+'Is {{IH WB} {Z WB}}
+'It {{IH WB} {T WB}}
+'It's {{IH WB} T {S WB}}
+'Just {{JH WB} AH S {T WB}}
+'King {{K WB} IH {NG WB}}
+'La {{L WB} {AA WB}}
+'Let {{L WB} EH {T WB}}
+'Let's {{L WB} EH T {S WB}}
+'Look {{L WB} UH {K WB}}
+'Lord {{L WB} AO R {D WB}}
+'Made {{M WB} EY {D WB}}
+'Man {{M WB} AE {N WB}}
+'Maybe {{M WB} EY B {IY WB}}
+'Mom {{M WB} AA {M WB}}
+'My {{M WB} {AY WB}}
+'N {{AX WB} {N WB}}
+'N(1) {{N WB}}
+'N(2) {{XN WB}}
+'NEW {{N WB} {UW WB}}
+'Ndrangheta {{N WB} D R AA NG EH T {AX WB}}
+'New {{N WB} {UW WB}}
+'No {{N WB} {OW WB}}
+'Not {{N WB} AA {T WB}}
+'OK {{OW WB} K {EY WB}}
+'Oh {{OW WB}}
+'One {{W WB} AH {N WB}}
+'Please {{P WB} L IY {Z WB}}
+'So {{S WB} {OW WB}}
+'Star {{S WB} T AA {R WB}}
+'Taiwan {{T WB} AY W AA {N WB}}
+'Tell {{T WB} EH {L WB}}
+'Tis {{T WB} IH {Z WB}}
+'Wait {{W WB} EY {T WB}}
+'We {{W WB} {IY WB}}
+'We'll {{W WB} EH {L WB}}
+'We're {{W WB} {ER WB}}
+'We've {{W WB} IY {V WB}}
+'Well {{W WB} EH {L WB}}
+'What {{W WB} AH {T WB}}
+'What's {{W WB} AX T {S WB}}
+'When {{W WB} EH {N WB}}
+'Where {{W WB} EH {R WB}}
+'Who {{HH WB} {UW WB}}
+'Why {{W WB} {AY WB}}
+'Will {{W WB} IH {L WB}}
+'Yeah {{Y WB} {AE WB}}
+'Yes {{Y WB} EH {S WB}}
+'You {{Y WB} {UW WB}}
+'You're {{Y WB} AO {R WB}}
+'You've {{Y WB} UW {V WB}}
+'Your {{Y WB} AO {R WB}}
+'a {{AX WB}}
+'all {{AO WB} {L WB}}
+'an {{AX WB} {N WB}}
+'big {{B WB} IH {G WB}}
+'black {{B WB} L AE {K WB}}
+'cause {{K WB} AA {Z WB}}
+'d {{W WB} UH {D WB}}
+'dirty {{D WB} ER T {IY WB}}
+'do {{D WB} {UW WB}}
+'don't {{D WB} OW N {T WB}}
+'em {{AX WB} {M WB}}
