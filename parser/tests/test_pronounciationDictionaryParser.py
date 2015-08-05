@@ -1,12 +1,12 @@
 from unittest import TestCase
-from asrActiveLearning.parser.pron_dictionary import PronounciationDictionaryParser
+from asrActiveLearning.parser.pron_dictionary import PronunciationDictionaryParser
 
 __author__ = 'martin'
 
 
-class TestPronounciationDictionaryParser(TestCase):
+class TestPronunciationDictionaryParser(TestCase):
     def setUp(self):
-        self.parser = PronounciationDictionaryParser()
+        self.parser = PronunciationDictionaryParser()
         self.test_dictionary = "dictionary.small"
         self.valid_dict_line = "'Fahrenheit {{F WB} EH R AX N HH AY {T WB}}"
         self.expected_valid_sequence = [("F", "WB"), ("EH",), ("R",), ("AX",), ("N",), ("HH",), ("AY",), ("T", "WB")]
@@ -31,4 +31,6 @@ class TestPronounciationDictionaryParser(TestCase):
         self.assertEqual("'Fahrenheit", word)
         self.assertSequenceEqual(self.expected_valid_sequence, flatten_phone_list)
 
-
+    def test_parse(self):
+        word_to_phone_map = self.parser.parse(self.test_dictionary)
+        print word_to_phone_map

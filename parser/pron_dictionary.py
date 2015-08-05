@@ -1,12 +1,13 @@
 __author__ = 'martin'
 from asrActiveLearning.reader.csv_reader import CSVReader
 from asrActiveLearning.parser.brackets import BracketParser
+from collections import Counter
 import logging
 
 log = logging.getLogger(__name__)
 log.addHandler(logging.NullHandler())
 
-class PronounciationDictionaryParser(object):
+class PronunciationDictionaryParser(object):
     def __init__(self, opening_bracket="{", closing_bracket="}"):
         self.opening_bracket = opening_bracket
         self.closing_bracket = closing_bracket
@@ -40,17 +41,19 @@ class PronounciationDictionaryParser(object):
 
     def parse_line(self, line):
         word, phone_list = self.split_word_and_phone_list(line)
+        print word, " phonelist: ", phone_list
         parsed_phone_list = BracketParser.parse(phone_list, self.opening_bracket, self.closing_bracket)
         flatten_phone_list = self.convert_and_flatten_parsed_list(parsed_phone_list)
         return word, flatten_phone_list
 
     def parse(self, filename, line_reader=CSVReader):
-        csv_reader = line_reader
+        csv_reader = line_reader()
         word_to_phone_map = {}
         for line_number, line in enumerate(csv_reader.read(filename)):
+            line_as_string = " ".join(line)
             try:
-                word, parsed_phone_list = self.parse_line(line)
-                word_to_phone_map[word] = parsed_phone_list
+                word, parsed_phone_list = self.parse_line(line_as_string)
+                word_to_phone_map[word] = Counter(parsed_phone_list)
             except:
                 log.error("Error while parsing in file {0}, line {0}".format(filename, line_number))
                 raise

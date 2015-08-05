@@ -15,12 +15,18 @@ class BracketParser(object):
     @staticmethod
     def parse(string, opening_bracket, closing_bracket):
         """Generate parenthesized contents in string as pairs (level, contents)."""
+        print string
 
         BracketParser.check_for_trailing_brackets(string, opening_bracket, closing_bracket)
 
         string_cpy = "{0}{1}{2}".format(opening_bracket, string, closing_bracket)
         enclosed = pyparsing.Forward()
         nested_parents = pyparsing.nestedExpr(opening_bracket, closing_bracket, content=enclosed)
-        enclosed << (pyparsing.Word(pyparsing.alphas) | ',' | nested_parents)
+        enclosed << (pyparsing.Word(pyparsing.alphas)
+                     | ','
+                     | '+'
+                     | pyparsing.Word(pyparsing.alphanums)
+                     | nested_parents
+                     )
         return enclosed.parseString(string_cpy).asList()[0][0]
 
